@@ -16,7 +16,7 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 200rem;
+    height: 280rem;
 }
 
 /* navbar */
@@ -26,16 +26,16 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 7rem;
-    width: 80rem;
+    width: 96%;
     background: #48494C;
     margin: 1.5rem;
     z-index: 10;
 }
-.n-left p{
+.n-left img{
     display: flex;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-left: 2rem;
+    width: 10rem;
+    height: 5rem;
+    padding: 1rem;
 }
 .n-right{
     display: flex;
@@ -47,6 +47,7 @@ body{
     display: flex;
     font-size: 1.3rem;
     margin-right: 5rem;
+    cursor: pointer;
 }
 .n-item{
     display: flex;
@@ -60,19 +61,51 @@ body{
     text-decoration: none;
     color: #ffff;
     font-weight: 600;
-    margin: .6rem;
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+.a-tag:hover{
+    border-bottom: 3px solid rgb(33, 188, 33);
 }
 .n-lang {
     display: flex;
+}
+
+
+/* location */
+.loc{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 55rem;
+    padding: 1.5rem;
+    gap: 10rem;
+    top: 2rem;
+    margin-top: 10rem;
+}
+.loc-title{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.loc-map{
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    width: 80rem;
+    height: 35rem;
 }
 
 /* cards */
 .card{
     position: relative;
     display: flex;
-    height: 58rem;
+    height: 60rem;
     flex-wrap: wrap;
     top: 10rem;
+    margin-top: 10rem;
 }
 .c-body{
     display: flex;
@@ -82,9 +115,18 @@ body{
     margin: 1.5rem;
     padding: 1rem;
     gap: 2rem;
+    cursor: pointer;
 }
 .c-body img{
+    width: 100%;
+    height: 100%;
+}
+.image{
     width: 15rem;
+    overflow: hidden;
+}
+.c-body img:hover{
+    scale: 1.05;
 }
 .c-details{
     display: flex;
@@ -97,7 +139,7 @@ body{
     color: orange;
 }
 .green{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     color: green;
 }
@@ -106,7 +148,7 @@ body{
 .c-detail{
     position: relative;
     flex-direction: column;
-    height: 22rem;
+    height: 25rem;
     top: 10rem;
     padding: 1.5rem;
     margin-top: 10rem;
@@ -115,7 +157,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 7rem;
     margin-top: 2rem;
 }
 .c-desc-i{
@@ -179,21 +221,21 @@ option.placeholder {
 
 /* footer */
 .footer{
-    position: absolute;
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     background: rgb(233, 233, 233);
+    margin-top: 20rem;
     padding: 1.5rem;
     bottom: 0;
-    width: 80.2rem;
+    width: 100%;
     color: black;
 }
 .f-up{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 10rem;
+    height: 7rem;
 }
 .f-option{
     display: flex;
@@ -203,24 +245,6 @@ option.placeholder {
     color: black;
     font-size: 1.2rem;
     font-weight: 500;
-}
-.f-social{
-    display: flex;
-}
-.f-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.8rem;
-    height: 2.8rem;
-    color: rgb(44, 44, 44);
-    border: 1px solid rgb(159, 159, 159);
-}
-.f-address{
-    display: flex;
-    flex-direction: column;
-    width: 35rem;
-    gap: 2rem;
 }
 .f-middle{
     display: flex;
@@ -241,7 +265,7 @@ option.placeholder {
     gap: 1rem;
 }
 .footer p{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: rgb(120, 120, 120);
 }
